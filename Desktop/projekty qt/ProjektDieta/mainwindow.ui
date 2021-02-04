@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1060</width>
+    <height>594</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>571</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="lineEdit_sniadanie2kcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="lineEdit_kolacja"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="lineEdit_2sniadanie"/>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="lineEdit_obiad"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Wymarzona waga</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="lineEdit_sniadaniekcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLineEdit" name="lineEdit_kolacjakcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLineEdit" name="lineEdit_obiadkcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QSpinBox" name="wagaaktualna"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="lineEdit_sniadanie"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Kolacja</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Aktualna waga</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Śniadanie</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Obiad</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="wagawymarzona"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>II śniadanie</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="lineEdit_linksniadanie"/>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="lineEdit_link2sniadanie"/>
+     </item>
+     <item row="7" column="4">
+      <widget class="QLineEdit" name="lineEdit_linkobiad"/>
+     </item>
+     <item row="8" column="4">
+      <widget class="QLineEdit" name="lineEdit_linkkolacja"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="obiad">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>250</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Obiad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sniadanie2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>130</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>II Śniadanie</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="kolacja">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>370</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Kolacja</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sniadanie">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>10</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Śniadanie</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="zatwierdz">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zatwierdź</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dodawanie">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>480</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dodaj posiłek</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>490</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zamknij</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="sumakcal">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>440</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>489</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Suma KCAL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>410</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Link do przepisu</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>271</width>
+      <height>461</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1060</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuarchiwum">
+    <property name="title">
+     <string>Więcej...</string>
+    </property>
+    <addaction name="actionzapisz"/>
+    <addaction name="actiono_daniach"/>
+   </widget>
+   <addaction name="menuarchiwum"/>
+  </widget>
+  <action name="actionzapisz">
+   <property name="text">
+    <string>zapisz</string>
+   </property>
+  </action>
+  <action name="actionprzepisy">
+   <property name="text">
+    <string>przepisy</string>
+   </property>
+  </action>
+  <action name="actiono_daniach">
+   <property name="text">
+    <string>o daniach...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>864</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>814</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

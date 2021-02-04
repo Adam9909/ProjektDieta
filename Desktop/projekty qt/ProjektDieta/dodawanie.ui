@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dodawanie</class>
+ <widget class="QDialog" name="dodawanie">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dodaj swój posiłek.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zatwierdz">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>260</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zatwierdź</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>221</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEdit_wybordania"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QComboBox" name="comboBox_typdania">
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>sniadanie</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sniadanie2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>obiad</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>kolacja</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QSpinBox" name="spinBox_kcaldania">
+      <property name="maximum">
+       <number>99999</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>141</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Wybierz typ dania</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Wpisz swoje danie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Podaj kaloryke dania&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;(w kcal)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>zatwierdz</sender>
+   <signal>clicked()</signal>
+   <receiver>dodawanie</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
