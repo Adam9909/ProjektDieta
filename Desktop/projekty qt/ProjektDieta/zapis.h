@@ -42,9 +42,15 @@ public:
     QSqlQueryModel * modal1 = new QSqlQueryModel();
     QCompleter *ModelCompleter;
 
+    void init();
+
+    void ingredients(QString);
+
 private slots:
 
     void on_pushButton_clicked();
+
+    void on_pushButton_przegladarka_clicked();
 
 private:
     Ui::zapis *ui;

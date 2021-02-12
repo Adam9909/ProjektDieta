@@ -24,22 +24,6 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="5" column="3">
-      <widget class="QLineEdit" name="lineEdit_sniadanie2kcal">
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="2">
-      <widget class="QLineEdit" name="lineEdit_kolacja"/>
-     </item>
-     <item row="5" column="2">
-      <widget class="QLineEdit" name="lineEdit_2sniadanie"/>
-     </item>
-     <item row="7" column="2">
-      <widget class="QLineEdit" name="lineEdit_obiad"/>
-     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label_4">
        <property name="text">
@@ -50,32 +34,83 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
-      <widget class="QLineEdit" name="lineEdit_sniadaniekcal">
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="lineEdit_link2sniadanie"/>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLineEdit" name="lineEdit_linksniadanie"/>
+     </item>
+     <item row="0" column="4">
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>Poniedziałek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wtorek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Środa</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Czwartek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Piątek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sobota</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Niedziela</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>II śniadanie</string>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="8" column="3">
-      <widget class="QLineEdit" name="lineEdit_kolacjakcal">
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="lineEdit_sniadanie2kcal">
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="7" column="3">
-      <widget class="QLineEdit" name="lineEdit_obiadkcal">
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Śniadanie</string>
+       </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QSpinBox" name="wagaaktualna"/>
+     <item row="7" column="4">
+      <widget class="QLineEdit" name="lineEdit_linkobiad"/>
      </item>
-     <item row="2" column="2">
-      <widget class="QLineEdit" name="lineEdit_sniadanie"/>
+     <item row="8" column="4">
+      <widget class="QLineEdit" name="lineEdit_linkkolacja"/>
      </item>
      <item row="8" column="0">
       <widget class="QLabel" name="label_7">
@@ -87,20 +122,13 @@
        </property>
       </widget>
      </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="lineEdit_obiad"/>
+     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string>Aktualna waga</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Śniadanie</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -117,30 +145,55 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="QSpinBox" name="wagawymarzona"/>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="lineEdit_kolacja"/>
      </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label">
+     <item row="0" column="3" alignment="Qt::AlignRight">
+      <widget class="QLabel" name="label_9">
        <property name="text">
-        <string>II śniadanie</string>
+        <string>Wybierz dzień:</string>
        </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="zapiszdzien">
+       <property name="text">
+        <string>Zapisz dzień</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="lineEdit_sniadanie"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QSpinBox" name="wagaaktualna"/>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLineEdit" name="lineEdit_obiadkcal">
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="QLineEdit" name="lineEdit_linksniadanie"/>
+     <item row="8" column="3">
+      <widget class="QLineEdit" name="lineEdit_kolacjakcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
-     <item row="5" column="4">
-      <widget class="QLineEdit" name="lineEdit_link2sniadanie"/>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="lineEdit_sniadaniekcal">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
-     <item row="7" column="4">
-      <widget class="QLineEdit" name="lineEdit_linkobiad"/>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="lineEdit_2sniadanie"/>
      </item>
-     <item row="8" column="4">
-      <widget class="QLineEdit" name="lineEdit_linkkolacja"/>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="wagawymarzona"/>
      </item>
     </layout>
    </widget>

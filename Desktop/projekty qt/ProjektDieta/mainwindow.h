@@ -6,10 +6,19 @@
 #include <QSqlDatabase>
 #include <QSqlQueryModel>
 #include <QString>
-#include "dodawanie.h"
 #include <QStandardItemModel>
 #include <QTableWidget>
+#include <QLineEdit>
+#include <QTableView>
+#include <QDebug>
+#include <QChar>
+#include <QFile>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QLCDNumber>
+#include <QMessageBox>
 #include "zapis.h"
+#include "dodawanie.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -58,7 +67,15 @@ public:
     QString y;
     QString z;
 
+    QVector< QVector<QString> > csv_file = QVector <QVector<QString> > (1); // tablica dwuwymiarowa rozmiar 1, jest fajniejszy
+    QVector<QString>sniadania;
+    QVector<QString>sniadania2;
+    QVector<QString>obiad;
+    QVector<QString>kolacja;
 
+    void fill (QString); //wypełnienie pól dań
+
+     void initCsvFile(); // inicjalizacja tablicy
 
 private slots:
     void on_sniadanie_clicked();
@@ -77,9 +94,11 @@ private slots:
 
     void on_actionzapisz_triggered();
 
-    void on_actionprzepisy_triggered();
-
     void on_actiono_daniach_triggered();
+
+    void on_zapiszdzien_clicked();
+
+    void on_comboBox_currentIndexChanged(int index);
 
 private:
     Ui::MainWindow *ui;

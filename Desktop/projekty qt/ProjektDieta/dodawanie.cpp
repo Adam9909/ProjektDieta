@@ -21,7 +21,7 @@ dodawanie::~dodawanie()
 void dodawanie::on_zatwierdz_clicked()
 {
     connOpen();
-    QSqlQuery * qry = new QSqlQuery(db);
+    QSqlQuery* qry = new QSqlQuery(db);
     qry->prepare("INSERT INTO iksde (typ, danie, kalorie) " "VALUES (:typ, :danie, :kalorie)");
     qry->bindValue(":typ", ui->comboBox_typdania->currentText());
     qry->bindValue(":danie", ui->lineEdit_wybordania->text());
